@@ -3,9 +3,19 @@ package com.educandoweb.course.entities;
 import java.io.Serializable;
 import java.util.Objects;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name = "tb_user")
 public class User implements Serializable{
 	private static final long serialVersionUID = 1L;
 	
+	@Id //Tells the database what the primary key will be
+	@GeneratedValue(strategy = GenerationType.IDENTITY) //informs the database that the ID will be AUTO_INCREMENT
 	private Long id;
 	private String name;
 	private String email;
