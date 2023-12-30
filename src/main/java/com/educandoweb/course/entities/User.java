@@ -28,7 +28,7 @@ public class User implements Serializable{
 	private String password;
 	
 	@JsonIgnore
-	@OneToMany(mappedBy = "client") //Put the name the attribute that have in another association
+	@OneToMany(mappedBy = "client") // Put the name the attribute that have in another association
 	private List<Order> orders = new ArrayList<>();
 	
 	public User() {
