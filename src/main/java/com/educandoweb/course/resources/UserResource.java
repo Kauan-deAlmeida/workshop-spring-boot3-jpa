@@ -1,5 +1,4 @@
 package com.educandoweb.course.resources;
-
 import java.net.URI;
 import java.util.List;
 
@@ -17,7 +16,6 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import com.educandoweb.course.entities.User;
 import com.educandoweb.course.services.UserService;
-
 @RestController
 @RequestMapping(value = "users")
 public class UserResource {
